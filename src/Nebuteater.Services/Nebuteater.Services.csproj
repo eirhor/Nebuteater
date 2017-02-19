@@ -40,8 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DefaultEnumTranslationService.cs" />
+    <Compile Include="DefaultPerformanceService.cs" />
+    <Compile Include="DefaultPlayService.cs" />
+    <Compile Include="DefaultReservationService.cs" />
+    <Compile Include="DefaultRoleService.cs" />
+    <Compile Include="DefaultUserService.cs" />
+    <Compile Include="Interfaces\IDefaultEnumTranslationService.cs" />
+    <Compile Include="Interfaces\IDefaultPerformanceService.cs" />
+    <Compile Include="Interfaces\IDefaultUserService.cs" />
+    <Compile Include="Interfaces\IDefaultRoleService.cs" />
+    <Compile Include="Interfaces\IDefaultReservationService.cs" />
+    <Compile Include="Interfaces\IDefaultPlayService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nebuteater.Data\Nebuteater.Data.csproj">
+      <Project>{d24a61b6-36c1-4418-8bd9-9e8cbdafe7f4}</Project>
+      <Name>Nebuteater.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nebuteater.Models\Nebuteater.Models.csproj">
+      <Project>{96baebb1-dd86-455c-bcd1-dcd7b435c36b}</Project>
+      <Name>Nebuteater.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

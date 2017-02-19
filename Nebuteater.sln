@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebuteater.Models", "src\Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebuteater.Services", "src\Nebuteater.Services\Nebuteater.Services.csproj", "{3C9C58DD-48C9-47E9-95F0-3A23718B362E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebuteater.Web", "Nebuteater.Web\Nebuteater.Web.csproj", "{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3C9C58DD-48C9-47E9-95F0-3A23718B362E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C9C58DD-48C9-47E9-95F0-3A23718B362E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C9C58DD-48C9-47E9-95F0-3A23718B362E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

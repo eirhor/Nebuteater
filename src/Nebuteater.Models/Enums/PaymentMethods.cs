@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nebuteater.Models
+namespace Nebuteater.Models.Enums
 {
-    public class Class1
+    public enum PaymentMethods
     {
+        Kontant,
+        KontantOgTerminal,
+        Terminal
     }
 }
