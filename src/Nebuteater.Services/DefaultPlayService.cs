@@ -9,12 +9,10 @@ namespace Nebuteater.Services
     public class DefaultPlayService : IDefaultPlayService
     {
         private readonly IRepository<Play> _repository;
-        private readonly IUnitOfWork _unitOfWork;
 
-        public DefaultPlayService(IRepository<Play> repository, IUnitOfWork unitOfWork)
+        public DefaultPlayService(IRepository<Play> repository)
         {
             _repository = repository;
-            _unitOfWork = unitOfWork;
         }
 
         public Play GetPlay(int id)
@@ -44,7 +42,7 @@ namespace Nebuteater.Services
 
         public void Save()
         {
-            _unitOfWork.Commit();
+            _repository.Commit();
         }
     }
 }

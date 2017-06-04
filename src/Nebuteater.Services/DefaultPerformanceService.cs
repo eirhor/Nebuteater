@@ -9,12 +9,10 @@ namespace Nebuteater.Services
     public class DefaultPerformanceService : IDefaultPerformanceService
     {
         private readonly IRepository<Performance> _repository;
-        private readonly IUnitOfWork _unitOfWork;
 
-        public DefaultPerformanceService(IRepository<Performance> repository, IUnitOfWork unitOfWork)
+        public DefaultPerformanceService(IRepository<Performance> repository)
         {
             _repository = repository;
-            _unitOfWork = unitOfWork;
         }
 
         public Performance GetPerformance(int id)
@@ -44,7 +42,7 @@ namespace Nebuteater.Services
 
         public void Save()
         {
-            _unitOfWork.Commit();
+            _repository.Commit();
         }
     }
 }

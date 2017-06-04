@@ -9,12 +9,10 @@ namespace Nebuteater.Services
     public class DefaultRoleService : IDefaultRoleService
     {
         private readonly IRepository<Role> _repository;
-        private readonly IUnitOfWork _unitOfWork;
 
-        public DefaultRoleService(IRepository<Role> repository, IUnitOfWork unitOfWork)
+        public DefaultRoleService(IRepository<Role> repository)
         {
             _repository = repository;
-            _unitOfWork = unitOfWork;
         }
 
         public Role GetRole(int id)
@@ -44,7 +42,7 @@ namespace Nebuteater.Services
 
         public void Save()
         {
-            _unitOfWork.Commit();
+            _repository.Commit();
         }
     }
 }

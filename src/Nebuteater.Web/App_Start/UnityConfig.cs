@@ -32,7 +32,6 @@ namespace Nebuteater.Web
             container.RegisterType<IRepository<Role>, RoleRepository>();
             container.RegisterType<IRepository<User>, UserRepository>();
             container.RegisterType<IDbFactory, DbFactory>();
-            container.RegisterType<IUnitOfWork, UnitOfWork>();
             
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

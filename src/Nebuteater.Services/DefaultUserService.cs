@@ -9,12 +9,10 @@ namespace Nebuteater.Services
     public class DefaultUserService : IDefaultUserService
     {
         private readonly IRepository<User> _repository;
-        private readonly IUnitOfWork _unitOfWork;
 
-        public DefaultUserService(IRepository<User> repository, IUnitOfWork unitOfWork)
+        public DefaultUserService(IRepository<User> repository)
         {
             _repository = repository;
-            _unitOfWork = unitOfWork;
         }
 
         public User GetUser(int id)
@@ -44,7 +42,7 @@ namespace Nebuteater.Services
 
         public void Save()
         {
-            _unitOfWork.Commit();
+            _repository.Commit();
         }
     }
 }

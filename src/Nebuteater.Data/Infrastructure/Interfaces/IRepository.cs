@@ -7,6 +7,7 @@ namespace Nebuteater.Data.Infrastructure.Interfaces
     public interface IRepository<T> 
         where T: class
     {
+        void Commit();
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);

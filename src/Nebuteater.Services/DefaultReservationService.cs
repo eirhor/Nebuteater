@@ -9,12 +9,10 @@ namespace Nebuteater.Services
     public class DefaultReservationService : IDefaultReservationService
     {
         private readonly IRepository<Reservation> _repository;
-        private readonly IUnitOfWork _unitOfWork;
 
-        public DefaultReservationService(IRepository<Reservation> repository, IUnitOfWork unitOfWork)
+        public DefaultReservationService(IRepository<Reservation> repository)
         {
             _repository = repository;
-            _unitOfWork = unitOfWork;
         }
 
         public Reservation GetReservation(int id)
@@ -44,7 +42,7 @@ namespace Nebuteater.Services
 
         public void Save()
         {
-            _unitOfWork.Commit();
+            _repository.Commit();
         }
     }
 }

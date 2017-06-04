@@ -24,6 +24,11 @@ namespace Nebuteater.Data.Infrastructure
             dbSet = DbContext.Set<T>();
         }
 
+        public virtual void Commit()
+        {
+            context.Commit();
+        }
+
         public virtual void Add(T entity)
         {
             dbSet.Add(entity);

@@ -21,20 +21,6 @@ namespace Nebuteater.Web.Controllers
 
         public ActionResult Index()
         {
-            var test = new Play
-            {
-                Name = "Test",
-                Description = "Desc",
-                Location = "Norge",
-                Price = 130,
-                PaymentMethod = PaymentMethods.Kontant,
-                Performances = new List<Performance>(),
-                Roles = new List<Role>()
-            };
-
-            _playService.Create(test);
-            _playService.Save();
-
             var model = new List<Play>();
             return View(model);
         }
