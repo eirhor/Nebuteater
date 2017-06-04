@@ -2,10 +2,11 @@
 using Nebuteater.Data.Infrastructure;
 using Nebuteater.Data.Infrastructure.Interfaces;
 using Nebuteater.Models.Entities;
+using Nebuteater.Services.Interfaces;
 
 namespace Nebuteater.Services
 {
-    public class DefaultUserService
+    public class DefaultUserService : IDefaultUserService
     {
         private readonly IRepository<User> _repository;
         private readonly IUnitOfWork _unitOfWork;

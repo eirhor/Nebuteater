@@ -8,21 +8,21 @@ using Nebuteater.Data.Infrastructure.Interfaces;
 
 namespace Nebuteater.Data.Infrastructure
 {
-    public abstract class RepositoryBase<T> 
+    public class RepositoryBase<T>
         where T : class
     {
         private TheatreDbContext context;
         private readonly IDbSet<T> dbSet;
+
+        protected IDbFactory DbFactory { get; private set; }
+
+        protected TheatreDbContext DbContext => context ?? (context = DbFactory.Init());
 
         protected RepositoryBase(IDbFactory dbFactory)
         {
             DbFactory = dbFactory;
             dbSet = DbContext.Set<T>();
         }
-
-        protected IDbFactory DbFactory { get; private set; }
-
-        protected TheatreDbContext DbContext => context ?? (context = DbFactory.Init());
 
         public virtual void Add(T entity)
         {

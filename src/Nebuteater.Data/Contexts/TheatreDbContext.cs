@@ -6,7 +6,7 @@ namespace Nebuteater.Data.Contexts
 {
     public class TheatreDbContext : DbContext
     {
-        public TheatreDbContext() : base("dbNebutBillett")
+        public TheatreDbContext() : base("TheatreDb")
         {
             
         }
