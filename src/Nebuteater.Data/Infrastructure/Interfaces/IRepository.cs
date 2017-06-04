@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Nebuteater.Data.Infrastructure
+namespace Nebuteater.Data.Infrastructure.Interfaces
 {
     public interface IRepository<T> 
         where T: class

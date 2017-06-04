@@ -1,4 +1,4 @@
-﻿namespace Nebuteater.Data.Infrastructure
+﻿namespace Nebuteater.Data.Infrastructure.Interfaces
 {
     public interface IUnitOfWork
     {

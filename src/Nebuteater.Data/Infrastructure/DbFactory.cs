@@ -1,4 +1,5 @@
 ﻿using Nebuteater.Data.Contexts;
+using Nebuteater.Data.Infrastructure.Interfaces;
 
 namespace Nebuteater.Data.Infrastructure
 {

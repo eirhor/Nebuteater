@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Nebuteater.Data.Infrastructure;
+using Nebuteater.Data.Infrastructure.Interfaces;
 using Nebuteater.Models.Entities;
 
 namespace Nebuteater.Services

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26206.0
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebuteater.Data", "src\Nebuteater.Data\Nebuteater.Data.csproj", "{D24A61B6-36C1-4418-8BD9-9E8CBDAFE7F4}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebuteater.Services", "src\Nebuteater.Services\Nebuteater.Services.csproj", "{3C9C58DD-48C9-47E9-95F0-3A23718B362E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebuteater.Web", "src\Nebuteater.Web\Nebuteater.Web.csproj", "{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebuteater.Tests", "src\Nebuteater.Tests\Nebuteater.Tests.csproj", "{65104BA2-77B6-42AF-AFFE-96B44536F7E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E720F2DB-5C05-4E59-AFAB-9834CE2D575B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65104BA2-77B6-42AF-AFFE-96B44536F7E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65104BA2-77B6-42AF-AFFE-96B44536F7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65104BA2-77B6-42AF-AFFE-96B44536F7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65104BA2-77B6-42AF-AFFE-96B44536F7E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
