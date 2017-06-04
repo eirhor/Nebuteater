@@ -60,6 +60,11 @@
     <Compile Include="Infrastructure\Interfaces\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201706041925103_Initial migration.cs" />
+    <Compile Include="Migrations\201706041925103_Initial migration.Designer.cs">
+      <DependentUpon>201706041925103_Initial migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\PerformanceRepository.cs" />
     <Compile Include="Repositories\PlayRepository.cs" />
@@ -67,7 +72,11 @@
     <Compile Include="Repositories\RoleRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706041925103_Initial migration.resx">
+      <DependentUpon>201706041925103_Initial migration.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
