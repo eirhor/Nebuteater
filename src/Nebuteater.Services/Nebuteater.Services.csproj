@@ -40,13 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultEnumTranslationService.cs" />
     <Compile Include="DefaultPerformanceService.cs" />
     <Compile Include="DefaultPlayService.cs" />
     <Compile Include="DefaultReservationService.cs" />
     <Compile Include="DefaultRoleService.cs" />
     <Compile Include="DefaultUserService.cs" />
-    <Compile Include="Interfaces\IDefaultEnumTranslationService.cs" />
     <Compile Include="Interfaces\IDefaultPerformanceService.cs" />
     <Compile Include="Interfaces\IDefaultUserService.cs" />
     <Compile Include="Interfaces\IDefaultRoleService.cs" />

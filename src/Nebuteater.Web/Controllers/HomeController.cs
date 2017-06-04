@@ -19,10 +19,17 @@ namespace Nebuteater.Web.Controllers
             _playService = playService;
         }
 
+        [HttpGet]
         public ActionResult Index()
         {
-            var model = new List<Play>();
+            var model = _playService.GetAll();
             return View(model);
+        }
+        
+        [HttpGet]
+        public ActionResult Order(int performanceId)
+        {
+            return View("Order", new List<object>());
         }
     }
 }

@@ -21,7 +21,6 @@ namespace Nebuteater.Web
             
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<IDefaultPlayService, DefaultPlayService>();
-            container.RegisterType<IDefaultEnumTranslationService, DefaultEnumTranslationService>();
             container.RegisterType<IDefaultPerformanceService, DefaultPerformanceService>();
             container.RegisterType<IDefaultReservationService, DefaultReservationService>();
             container.RegisterType<IDefaultRoleService, DefaultRoleService>();
