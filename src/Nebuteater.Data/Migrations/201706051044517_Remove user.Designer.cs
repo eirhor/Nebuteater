@@ -7,13 +7,13 @@ namespace Nebuteater.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Initialmigration : IMigrationMetadata
+    public sealed partial class Removeuser : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initialmigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Removeuser));
         
         string IMigrationMetadata.Id
         {
-            get { return "201706041925103_Initial migration"; }
+            get { return "201706051044517_Remove user"; }
         }
         
         string IMigrationMetadata.Source

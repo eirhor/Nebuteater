@@ -3,7 +3,7 @@ namespace Nebuteater.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initialmigration : DbMigration
+    public partial class Removeuser : DbMigration
     {
         public override void Up()
         {
@@ -65,17 +65,6 @@ namespace Nebuteater.Data.Migrations
                 .ForeignKey("dbo.Play", t => t.PlayId, cascadeDelete: true)
                 .Index(t => t.PlayId);
             
-            CreateTable(
-                "dbo.User",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        FullName = c.String(nullable: false),
-                        Email = c.String(nullable: false),
-                        Password = c.String(nullable: false),
-                    })
-                .PrimaryKey(t => t.Id);
-            
         }
         
         public override void Down()
@@ -86,7 +75,6 @@ namespace Nebuteater.Data.Migrations
             DropIndex("dbo.Role", new[] { "PlayId" });
             DropIndex("dbo.Reservations", new[] { "PerformanceId" });
             DropIndex("dbo.Performance", new[] { "PlayId" });
-            DropTable("dbo.User");
             DropTable("dbo.Role");
             DropTable("dbo.Play");
             DropTable("dbo.Reservations");

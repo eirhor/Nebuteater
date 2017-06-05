@@ -14,7 +14,6 @@ namespace Nebuteater.Data.Contexts
         public DbSet<Play> Plays { get; set; }
         public DbSet<Performance> Performances { get; set; }
         public DbSet<Role> Roles { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
 
         public virtual void Commit()
@@ -28,7 +27,6 @@ namespace Nebuteater.Data.Contexts
             modelBuilder.Configurations.Add(new PerformanceConfiguration());
             modelBuilder.Configurations.Add(new ReservationConfiguration());
             modelBuilder.Configurations.Add(new RoleConfiguration());
-            modelBuilder.Configurations.Add(new UserConfiguration());
         }
     }
 }

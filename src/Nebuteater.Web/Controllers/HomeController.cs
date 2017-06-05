@@ -29,7 +29,7 @@ namespace Nebuteater.Web.Controllers
         [HttpGet]
         public ActionResult Order(int performanceId)
         {
-            return View("Order", new List<object>());
+            return View("Order", new Performance());
         }
     }
 }
