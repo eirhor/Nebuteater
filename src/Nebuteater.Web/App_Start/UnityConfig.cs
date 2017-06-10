@@ -6,10 +6,7 @@ using Nebuteater.Services;
 using Nebuteater.Data.Infrastructure.Interfaces;
 using Nebuteater.Data.Infrastructure;
 using Nebuteater.Data.Repositories;
-using Nebuteater.Identity.Infrastructure.Interfaces;
-using Nebuteater.Identity.Repositories;
 using Nebuteater.Models.Entities;
-using Nebuteater.Models.Identity;
 
 namespace Nebuteater.Web
 {
