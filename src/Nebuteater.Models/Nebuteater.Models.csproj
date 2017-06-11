@@ -82,7 +82,14 @@
     <Compile Include="Enums\Groups.cs" />
     <Compile Include="Enums\PaymentMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Account\ForgotPasswordConfirmationViewModel.cs" />
+    <Compile Include="ViewModels\Account\ForgotPasswordViewModel.cs" />
     <Compile Include="ViewModels\Account\LoginViewModel.cs" />
+    <Compile Include="ViewModels\Account\ResetPasswordConfirmationViewModel.cs" />
+    <Compile Include="ViewModels\Account\ResetPasswordViewModel.cs" />
+    <Compile Include="ViewModels\Account\SendCodeViewModel.cs" />
+    <Compile Include="ViewModels\Account\VerifyCodeViewModel.cs" />
+    <Compile Include="ViewModels\Shared\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -94,6 +101,12 @@
     <Folder Include="ViewModels\Manage\" />
     <Folder Include="ViewModels\RolesAdmin\" />
     <Folder Include="ViewModels\UserAdmin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nebuteater.Identity\Nebuteater.Identity.csproj">
+      <Project>{adc2d42a-2f39-40cb-95b3-08ec2f785d32}</Project>
+      <Name>Nebuteater.Identity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
