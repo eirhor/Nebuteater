@@ -81,15 +81,19 @@
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Enums\Groups.cs" />
     <Compile Include="Enums\PaymentMethods.cs" />
-    <Compile Include="ViewModels\AdminIndexViewModel.cs" />
-    <Compile Include="ViewModels\AdminLoginViewModel.cs" />
-    <Compile Include="ViewModels\AdminRegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Account\LoginViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ViewModels\Admin\" />
+    <Folder Include="ViewModels\Home\" />
+    <Folder Include="ViewModels\Manage\" />
+    <Folder Include="ViewModels\RolesAdmin\" />
+    <Folder Include="ViewModels\UserAdmin\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

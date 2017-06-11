@@ -1,0 +1,15 @@
+﻿@model Nebuteater.Models.ViewModels.Account.SendCodeViewModel
+
+<h2>@Model.Title.</h2>
+
+@using (Html.BeginForm("SendCode", "Account", new { ReturnUrl = Model.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-8">
+            Two Factor Authentication Provider:
+            @Html.DropDownListFor(model => model.SendCode.SelectedProvider, Model.SendCode.Providers)
+            <input type="submit" value="Submit" class="btn btn-default" />
+        </div>
+    </div>
+}
